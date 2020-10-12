@@ -1,4 +1,4 @@
-#Function to multiply Key inverse matrix with the characters index obtained
+#Function to multiply 4X4 Key inverse matrix in Kinv with the 4X1 Character indices matrix stored in d
 def mul(Kinv,d):
     res=[0,0,0,0]
     res[0]=(Kinv[0][0]*d[0])+(Kinv[0][1]*d[1])+(Kinv[0][2]*d[2])+(Kinv[0][3]*d[3])
@@ -12,7 +12,7 @@ def mul(Kinv,d):
     return res
     
 
-#Function to find charater index in the given character set s
+#Function to find character index in the given character set s, of 73 characters in this case
 def ind(a):
     s=['0','1','2','3','4','5','6','7','8','9',' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',',','\'','.','!','?','*','\"','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','-',';','\n']
     f=False
@@ -83,6 +83,6 @@ for i in range(0,len(s),4):
 
     
 #This code was contributed by Vaibhav Tripathi
-#Contact me my mailing to vaibhavtripthi2420@gmail.com for any queries or suggestions
+#Contact me by mailing to vaibhavtripthi2420@gmail.com for any queries or suggestions
 
 
